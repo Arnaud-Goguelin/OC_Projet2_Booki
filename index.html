@@ -3,32 +3,38 @@
 
 <head>
     <meta charset="utf-8" >
-    <title>Titre de l'onglet</title>
+    <title>Booki | Agence de voyage en ligne</title>
     <link href="CSS/styles.css" rel="stylesheet" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link href="CSS/icones/css/all.css" rel="stylesheet">
 </head>
-
+ <!--Il est important d’utiliser des balises sémantiques, au minimum “header”, “nav”,
+“h1-h2-h3”, “main”, “section”, “article” et “footer”.-->
 <body>
     <header>
+        <img src="CSS/Images/logo/Booki.png" alt="logo de Booki">
         <nav>
+            <a href="#">Hébergements</a>
+            <a href="#">Activités</a>
         </nav>
     </header>
     <main>
-              <section>
-                 <h1></h1>
-                 <i class="fab fa-github fa-10x"></i>
-                 <i class="fas fa-camera"></i>
-                 <i class="fa-solid fa-thumbs-up fa-5x"></i>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis leo sapien, feugiat eu ante et, fermentum dictum neque. Proin vitae purus vitae dolor efficitur pellentesque. Vestibulum a molestie nulla. Aliquam lorem augue, auctor vitae massa in, bibendum cursus ligula. Maecenas lorem elit, maximus quis quam ut, varius hendrerit dui. Cras feugiat euismod turpis, sed dignissim nunc fringilla a. Pellentesque quis neque quam. Mauris ut mi arcu. Donec eleifend nisi non elit placerat ultrices. Curabitur malesuada purus a erat faucibus tincidunt ullamcorper vel urna. Vestibulum sodales dictum mi, sit amet viverra elit mattis ac. 
-                    Sed in ex sapien. Proin ornare maximus elit, eget ornare justo. Etiam placerat velit vitae lectus volutpat, vel pharetra lacus mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In suscipit quis erat vel commodo. Suspendisse vel ipsum ex. Suspendisse blandit velit ornare tincidunt commodo. Proin dapibus dui mauris, ac finibus nisl tristique eu. Cras cursus arcu non turpis suscipit vestibulum. Phasellus vestibulum, mauris sed posuere ullamcorper, nulla lacus vestibulum elit, a lacinia velit tellus sit amet dolor. 
-                    Integer cursus consequat tortor ac hendrerit. Donec porttitor elementum sapien vel scelerisque. Maecenas diam felis, tincidunt nec erat a, iaculis congue nibh. Curabitur id semper urna, porttitor gravida magna. Nullam fringilla nulla a ex hendrerit tristique. Pellentesque viverra tincidunt lectus, nec vulputate turpis facilisis eu. Duis ac fermentum dolor, id convallis est. 
-                    Nam dolor felis, egestas at ex laoreet, facilisis eleifend dui. Curabitur pharetra risus quis euismod tempus. Curabitur viverra scelerisque orci cursus malesuada. Curabitur varius eget orci eget volutpat. Nullam nec ligula a lacus sollicitudin porttitor. Aenean sed enim non diam pretium gravida. Etiam commodo interdum sem ut finibus. Quisque at purus dui. Cras sed augue nec nisi condimentum dictum et vel purus. Duis sollicitudin nisl pulvinar lacinia luctus. Donec ac interdum ligula. Integer eu vestibulum quam, ac maximus enim. Maecenas at lacinia lorem. Morbi at leo eu massa aliquam vehicula vel eu nibh. Maecenas sollicitudin tempus urna vel lobortis. Proin sed quam tincidunt, dignissim justo ut, molestie velit. 
-                    Etiam interdum, nibh sed iaculis sodales, dui tellus luctus eros, vitae viverra est eros vitae libero. Etiam imperdiet mollis mi id pharetra. Aliquam sed augue ut tortor rutrum suscipit eget sit amet metus. Sed at eleifend orci, id congue tortor. Sed quis diam nec nisl sollicitudin dapibus. Nam consequat condimentum congue. Pellentesque vitae vulputate tellus. Quisque pellentesque libero justo, quis tincidunt sem sodales nec. Sed cursus pretium enim, interdum auctor tellus eleifend a. 
-                    
+              <section class="recherche_et_filtres">
+                <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+                <p>En plein centre-ville ou en plein nature
                 </p>
+                <div class="formulaire_de_recherche">
+                    <div class="location_dot">
+                    <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <form method="get" action =#>
+                    <input type="search" id="ville_recherche" name="recherche">    
+                    </form>
+                    <input type="submit" value="Rechercher" id="rechercher">
+                </div>
+
         </section>
     </main>
     <footer>

@@ -1,8 +1,112 @@
+/* code CSS global du projet */
+
 * {
     margin: 0;
-  }
-
-body {
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
+    color: black;
+  }
+
+  header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* attention à mettre le bon nombre de pixel en haut, à droite, 
+    en bas et à gauche selon la plaquette*/
+    margin-left: 55px;
+  }
+
+  header img {
+    width:61px;
+    height: 19px; 
+    padding-top: 36px;
+  }
+
+  nav {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  nav a {
+    text-decoration: none;
+    height: 19px; 
+    width: 50%;
+    text-align: center;
+        /* attention à mettre le bon nombre de pixel en haut, à droite, 
+    en bas et à gauche selon la plaquette*/
+    padding-top: 36px;
+  }
+
+  nav a:hover{
+    color: #0065FC;
+    border-top:#0065FC solid 2px;
+  }
+
+  main {
+    margin-top: 63px;
+    margin-left: 55px;
+  }
+
+  .formulaire_de_recherche {
+    display: flex;
+    justify-content: start;
+  }
+
+  .location_dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    Width: 50px;
+    Height: 49px;
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+  }
+
+  .ville_recherche {
+    padding-right: 55px;
+  }
+
+  /* adaptiblité tablette...
+  ...code à créer*/
+
+  /* adaptabilité mobile*/
+
+  @media screen and (max-width: 768px) {
+
+    header {
+      display:flex;
+      flex-direction: column;
+      margin: 0;
+    }
+    
+    header img {
+      margin: 20px;
+    }
+
+    nav {
+      margin:0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    nav a {
+      width: 50%;
+          /* attention à mettre le bon nombre de pixel en haut, à droite, 
+    en bas et à gauche selon la plaquette*/
+      padding-bottom: 23px;
+      padding-top: 20px;
+      margin: auto;
+      text-align: center;
+    }
+
+    nav a:hover{
+      border-top:none;
+      border-bottom:#0065FC solid 3px;
+    }
   }
