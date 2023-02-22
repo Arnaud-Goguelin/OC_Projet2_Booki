@@ -1,20 +1,79 @@
-/* code CSS global du projet */
+/* Importantion des polices raleway*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
 
-* {
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1em;
-    color: black;
-  }
+/* CSS RESET
+http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* code CSS deskop du projet */
+
+/*html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}*/
+
+html {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  width: 1400px;
+}
 
   header {
+    margin: 0 30px 0 30px;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     /* attention à mettre le bon nombre de pixel en haut, à droite, 
     en bas et à gauche selon la plaquette*/
-    margin-left: 55px;
   }
 
   header img {
@@ -31,6 +90,7 @@
   }
 
   nav a {
+    color: black;
     text-decoration: none;
     height: 19px; 
     width: 50%;
@@ -46,8 +106,23 @@
   }
 
   main {
-    margin-top: 63px;
-    margin-left: 55px;
+    margin: 63px 30px 0px 30px;
+  }
+
+  h1 {
+    font-size: 22px;
+    font-weight:700;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight:700;
+    margin-right: 50px;
+  }
+
+  h1 + p {
+    margin-bottom: 20px;
   }
 
   .formulaire_de_recherche {
@@ -61,21 +136,120 @@
     align-items: center;
     Width: 50px;
     Height: 49px;
-    border: 1px solid #F2F2F2;
     background-color: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
   }
 
-  .ville_recherche {
-    padding-right: 55px;
+  #fa-solid fa-location-dot {
+    Width: 14px;
+    Height: 18px;
   }
 
-  /* adaptiblité tablette...
-  ...code à créer*/
+  #ville_recherche {
+    padding-left: 15px;
+    font-size: 18px;
+    font-weight:700;
+    Height: 49px;
+    border: 1px solid #F2F2F2;
+  }
 
-  /* adaptabilité mobile*/
+  #rechercher {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 132px;
+    Height: 49px;
+    background-color: #0065FC;
+    color: white;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    font-size: 18px;
+    font-weight:700;
+  }
+
+  .filtres {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .boutons {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    justify-content: space-between;
+  }
+
+  .boutons :hover {
+    background-color: #DEEBFF;
+  }
+
+  .icones_boutons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    height: 30px;
+    padding: 7px 15px 7px 15px;
+  }
+  
+  .icones_boutons i {
+    color: #0065FC;
+    font-size: 17px;
+  }
+
+  .icones_boutons span {
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight:700;
+  }
+
+  .infos {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .infos i {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    font-size: small;
+    color:#0065FC;
+    border: 1px solid #D9D9D9;
+    border-radius: 24px;
+  }
+
+  footer {
+            /* attention à mettre le bon nombre de pixel en haut, à droite, 
+    en bas et à gauche selon la plaquette*/
+    margin: 63px 30px 0px 30px;
+  }
+
+  /* adaptiblité tablette entre 768px  et 992 px */
+
+  @media all and (min-width: 768px) and (max-width: 992px) {
+    
+    html {
+      width: auto;
+    }
+
+  }
+
+  /* adaptabilité mobile en dessous de 768 px */
 
   @media screen and (max-width: 768px) {
+
+    html {
+      width: auto;
+    }
 
     header {
       display:flex;
