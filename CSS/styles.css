@@ -63,6 +63,7 @@ html {
   margin: 0;
   font-family: 'Raleway', sans-serif;
   color: black;
+  font-size: 1em;
   width: 1400px;
 }
 
@@ -110,19 +111,23 @@ html {
   }
 
   h1 {
-    font-size: 22px;
+    font-size: 1.4em;
     font-weight:700;
     margin-bottom: 15px;
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 1.2em;
     font-weight:700;
     margin-right: 50px;
   }
 
   h1 + p {
     margin-bottom: 20px;
+  }
+
+  .icone_recherche {
+    display: none;
   }
 
   .formulaire_de_recherche {
@@ -147,7 +152,7 @@ html {
 
   #ville_recherche {
     padding-left: 15px;
-    font-size: 18px;
+    font-size: 1.1em;
     font-weight:700;
     Height: 49px;
     border: 1px solid #F2F2F2;
@@ -163,7 +168,7 @@ html {
     color: white;
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
-    font-size: 18px;
+    font-size: 1.1em;
     font-weight:700;
   }
 
@@ -181,9 +186,11 @@ html {
     justify-content: space-between;
   }
 
+  @media all and (min-width: 992px) {
   .boutons :hover {
     background-color: #DEEBFF;
   }
+}
 
   .icones_boutons {
     display: flex;
@@ -197,12 +204,12 @@ html {
   
   .icones_boutons i {
     color: #0065FC;
-    font-size: 17px;
+    font-size: 1.05em;
   }
 
   .icones_boutons span {
     margin-left: 10px;
-    font-size: 17px;
+    font-size: 1.05em;
     font-weight:700;
   }
 
@@ -221,7 +228,7 @@ html {
     margin-right: 10px;
     width: 24px;
     height: 24px;
-    font-size: small;
+    font-size: 0.8em;
     color:#0065FC;
     border: 1px solid #D9D9D9;
     border-radius: 24px;
@@ -273,8 +280,8 @@ html {
       width: 50%;
           /* attention à mettre le bon nombre de pixel en haut, à droite, 
     en bas et à gauche selon la plaquette*/
-      padding-bottom: 23px;
-      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-top: 48px;
       margin: auto;
       text-align: center;
     }
@@ -283,4 +290,70 @@ html {
       border-top:none;
       border-bottom:#0065FC solid 3px;
     }
+
+    main {
+      margin: 0 5.3% 0 5.3%;
+    }
+
+    h1 {
+      margin-top: 15px;
+    }
+
+    #ville_recherche {
+      width: 100%;
+    }
+
+    .icone_recherche {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 49px;
+      height: 47px;
+      background-color: #0065FC;
+      color: white;
+      border: 1px solid #0065FC;
+      border-radius: 0px 15px 15px 0px;
+      font-size: 1.05em;
+    }
+    #rechercher {
+      display: none;
+    }
+
+    .filtres {
+      flex-direction: column;
+      align-items: start;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    .boutons {
+      flex-wrap: wrap;
+      width: auto;
+      margin: 0 5% 0 5%;
+    }
+  
+    .icones_boutons {
+      border: 2px solid #D9D9D9;
+      border-radius: 25px;
+      height: 30px;
+      width: 41%;
+      padding: 2% 1% 2% 3%;
+      margin: 0 3% 4% 0;
+    }
+    
+    .icones_boutons i {
+      color: #0065FC;
+      font-size: 1.05em;
+    }
+  
+    .icones_boutons span {
+      margin-left: 5px;
+      font-size: 0.7em;
+      font-weight:700;
+      width: auto;
+    }
+
   }
