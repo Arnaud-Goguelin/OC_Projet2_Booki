@@ -64,7 +64,7 @@ html {
   font-family: 'Raleway', sans-serif;
   color: black;
   font-size: 1em;
-  width: 1400px;
+  max-width: 1400px;
 }
 
   header {
@@ -73,6 +73,7 @@ html {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    max-width: 100%;
     /* attention à mettre le bon nombre de pixel en haut, à droite, 
     en bas et à gauche selon la plaquette*/
   }
@@ -84,7 +85,7 @@ html {
   }
 
   nav {
-    width: 400px;
+    width: 28%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -247,7 +248,14 @@ html {
     html {
       width: auto;
     }
-
+  
+    nav {
+      width: auto;
+    }
+  
+    nav a {
+      padding-left : 50px;
+    }
   }
 
   /* adaptabilité mobile en dessous de 768 px */
