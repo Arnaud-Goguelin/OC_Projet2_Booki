@@ -114,7 +114,6 @@ a {
   h1 {
     font-size: 1.4em;
     font-weight:700;
-    margin: 0 0 15px 0;
   }
 
   h2 {
@@ -123,7 +122,17 @@ a {
     margin: 0 50px 0 0;
   }
 
-  h1 + p {
+  .recherche_et_filtres h1 {
+    font-size: 1.4em;
+    font-weight:700;
+    margin: 0 0 15px 0
+  }
+
+  .recherche_et_filtres h2 {
+    margin: 0 50px 0 0;
+  }
+
+  .recherche_et_filtres h1 + p {
     margin: 0 0 20px 0;
   }
 
@@ -235,6 +244,12 @@ a {
     border-radius: 24px;
   }
 
+  .corps_de_page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   @media all and (min-width: 769px) {
   .Hebergements {
     background: #F2F2F2;
@@ -243,21 +258,21 @@ a {
 
   .Hebergements {
     border-radius: 20px;
-    width: 65%;
+    width: 68%;
     display: flex;
     flex-direction: column;
-    margin: 40px 40px 60px 0;
+    margin: 40px 0 60px 0;
   }
 
   .Hebergements h1 {
-    margin: 40px 0 20px 40px;
+    margin: 30px 0 30px 40px;
   }
 
   .Hebergements h2 {
     margin: 20px 0 40px 40px;
   }
 
-  .ensemble_cartes {
+  .ensemble_cartes_hebergement {
     max-width: 100%;
     height: auto;
     display: flex;
@@ -284,10 +299,10 @@ a {
     max-height: 60%;
     width: 100%;
     border-radius: 20px 20px 0 0;
-    margin: 0 0 10px 0;
   }
 
   .presentation_hotel {
+    margin:10px 0 0 0;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -312,6 +327,63 @@ a {
     color: #F2F2F2;
   }
 
+  .Populaires {
+    background: #F2F2F2;
+    border-radius: 20px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0px 60px 0;
+  }
+
+  .entête_populaire {
+    margin: 30px 40px 30px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .chart {
+    color: #0065FC;
+  }
+
+  .carte_populaire {
+    margin: 10px 40px 20px 40px;
+    padding: 5px;
+    width: auto;
+    height: 145px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 2px 1px 5px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+  }
+
+  .carte_populaire img {
+    object-fit: cover;
+    max-height: 100%;
+    width: 50%;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .presentation_hotel_populaire {
+    margin: 10px 0 10px 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .presentation_hotel_populaire h3, h3 + p {
+    margin: 0px 0 5px 0;
+  }
+
+  .carte_populaire .classement {
+    margin: 15% 0 0 0;
+  }
+
+
 
   footer {
             /* attention à mettre le bon nombre de pixel en haut, à droite, 
@@ -335,6 +407,31 @@ a {
       padding-left : 50px;
     }
 
+    .corps_de_page {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .Hebergements {
+      width: auto;
+      margin: 40px 0 25px 0;
+    }
+
+    .Populaires {
+      width: auto;
+      margin: 25px 0px 60px 0;
+      padding: 0 0 20px 0;
+    }
+
+    .carte_populaire {
+      width: 30%;
+      height: 145px;
+    }
+
+    .ensemble_cartes_populaire {
+      display: flex;
+      flex-direction: row;
+     }
   }
 
   /* adaptabilité mobile en dessous de 768 px */
@@ -379,11 +476,15 @@ a {
     }
 
     main {
-      margin: 0 5.3% 0 5.3%;
+      margin: 0;
     }
 
     h1 {
       margin: 15px 0 15px 0;
+    }
+
+    .recherche_et_filtres {
+      margin: 0 5.3% 0 5.3%
     }
 
     .formulaire_de_recherche {
@@ -449,19 +550,24 @@ a {
       width: auto;
     }
 
-    .Hebergements {
-      width: 100%;
-      align-items: center;
+    .corps_de_page {
+      display: flex;
+      flex-direction: column-reverse;
     }
 
-    .ensemble_cartes {
+    .Hebergements {
+      width: auto;
+      margin: 20px 0 60px 0;
+    }
+
+    .ensemble_cartes_hebergement {
       margin:0;
       max-width: auto;
       height: auto;
     }
 
     .Hebergements h1 {
-      margin: 25px 0 25px 0;
+      margin: 20px 0 25px 20px;
     }
   
     .Hebergements h2 {
@@ -469,15 +575,14 @@ a {
     }
 
     .carte_hebergement {
-      margin: 10px 0 10px 0;
+      margin: 10px 20px 10px 20px;
       padding: 5px;
       width: 100%;
       height: 200px;
     }
   
     .carte_hebergement img {
-      /*object-fit: cover;*/
-      max-height: 60%;
+      max-height: auto;
       width: 100%;
       border-radius: 20px 20px 0 0;
       margin: 0 0 10px 0;
@@ -493,5 +598,19 @@ a {
     .presentation_hotel h3, h3 + p {
       margin: 0px 0 5px 0;
     }
+
+    .Populaires {
+      border-radius: 0;
+      width: 100%;
+      margin: 40px 0 0 0;
+      padding: 0 0 20px 0;
+    }
   
+    .entête_populaire {
+      margin: 20px 40px 15px 40px;
+    }
+  
+    .chart {
+      color: #0065FC;
+    }
   }
