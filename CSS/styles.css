@@ -383,6 +383,47 @@ a {
     margin: 15% 0 0 0;
   }
 
+  .Activites {
+    display: flex;
+    flex-direction: column;
+    max-width: auto;
+    height: 600px;
+  }
+
+  .Activites h1 {
+    margin: 20px 20px 40px 0;
+  }
+
+  .ensemble_cartes_activites {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .carte_activites {
+    width: 23%;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 1px 5px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .carte_activites h3 {
+    font-size: 1em;
+    font-weight: 700;
+    margin:0 0 20px 10px;
+  }
+
+  .carte_activites img {
+    object-fit: cover;
+    height: 85%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
 
 
   footer {
@@ -432,6 +473,14 @@ a {
       display: flex;
       flex-direction: row;
      }
+
+     .Activites {
+      height: 300px;
+    }
+
+    .carte_activites img {
+      height: 80%;
+    }
   }
 
   /* adaptabilité mobile en dessous de 768 px */
@@ -465,8 +514,7 @@ a {
           /* attention à mettre le bon nombre de pixel en haut, à droite, 
     en bas et à gauche selon la plaquette*/
       padding-bottom: 20px;
-      padding-top: 48px;
-      margin: auto;
+      margin: 0 0 20px 0;
       text-align: center;
     }
 
@@ -612,5 +660,29 @@ a {
   
     .chart {
       color: #0065FC;
+    }
+
+    .Activites {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      height: auto;
+      margin: 0 20px 0 20px;
+    }
+
+    .ensemble_cartes_activites {
+      flex-direction: column;
+      width: 100%;
+      margin: auto;
+    }
+
+    .carte_activites {
+      width: 100%;
+      height: 200px;
+      margin: 0 0 30px 0;
+    }
+
+    .carte_activites h3 {
+      margin:20px 0 20px 10px;
     }
   }
