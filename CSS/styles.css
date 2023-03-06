@@ -52,18 +52,21 @@ table {
 
 /* code CSS deskop du projet */
 
-/*html {
-  box-sizing: border-box;
-}
 *, *:before, *:after {
   box-sizing: inherit;
-}*/
+}
 
 html {
+  box-sizing: border-box;
   margin: auto;
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
   max-width: 1400px;
+}
+
+body {
+  width: 96%;
+  margin: auto;
 }
 
 a {
@@ -72,34 +75,30 @@ a {
 }
 
   header {
-    margin: 0 30px 0 30px;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
-    /* attention à mettre le bon nombre de pixel en haut, à droite, 
-    en bas et à gauche selon la plaquette*/
+    align-items:end;
+    height: 48px;
+
   }
 
   header img {
-    width:61px;
-    height: 19px; 
-    padding-top: 36px;
+    width:60px;
+    height: 20px; 
   }
 
   nav {
-    width: 28%;
+    width: 30%;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
 
   nav a {
-    height: 19px; 
     width: 50%;
     text-align: center;
-    padding-top: 36px;
+    padding: 30px 0 0 0;
   }
 
   nav a:hover{
@@ -108,7 +107,7 @@ a {
   }
 
   main {
-    margin: 63px 30px 0px 30px;
+    margin: 65px 0 65px 0;
   }
 
   h1 {
@@ -128,53 +127,50 @@ a {
     margin: 0 0 15px 0
   }
 
-  .recherche_et_filtres h2 {
-    margin: 0 50px 0 0;
-  }
-
   .recherche_et_filtres h1 + p {
     margin: 0 0 20px 0;
   }
 
+  .recherche_et_filtres h2 {
+    margin: 0 1% 0 0;
+  }
+
   /* icone_recherche est masqué en deskopt et n'apparait qu'en mobile*/
-  .icone_recherche {
-    display: none;
+  @media all and (min-width: 769px) {
+    .icone_recherche {
+      display: none;
+    }
   }
 
   .formulaire_de_recherche {
     display: flex;
+    flex-direction: row;
     justify-content: start;
+    align-items: center;
   }
 
   .location_dot {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    Width: 50px;
-    Height: 49px;
     background-color: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
-  }
-
-  #fa-solid fa-location-dot {
-    Width: 14px;
-    Height: 18px;
+    padding:17px;
   }
 
   #ville_recherche {
     padding-left: 15px;
     font-size: 1.1em;
     font-weight:700;
-    Height: 49px;
+    Height: 50px;
     border: 1px solid #F2F2F2;
   }
 
+  input::placeholder {
+    color:black;
+    opacity: 1;
+  }
+
   #rechercher {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     width: 132px;
-    Height: 49px;
+    Height: 50px;
     background-color: #0065FC;
     color: white;
     border: 1px solid #0065FC;
@@ -193,33 +189,32 @@ a {
   .boutons {
     display: flex;
     flex-direction: row;
-    width: 800px;
-    justify-content: space-between;
+    width: 100%;
   }
+
+  /* effet :hover uniquement en deskop */
 
   @media all and (min-width: 992px) {
-  .boutons :hover {
-    background-color: #DEEBFF;
+    .boutons :hover {
+      background-color: #DEEBFF;
+    }
   }
-}
 
   .icones_boutons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    width: auto;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-    height: 30px;
-    padding: 7px 15px 7px 15px;
+    padding: 1.2% 1% 1.2% 1%;
+    margin: 0 0 0 1%;
   }
   
   .icones_boutons i {
     color: #0065FC;
     font-size: 1.05em;
+    margin: 0 10px 0 0;
   }
 
   .icones_boutons span {
-    margin: 0 0 0 10px;
     font-size: 1.05em;
     font-weight:700;
   }
@@ -232,10 +227,6 @@ a {
   }
 
   .infos i {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     margin: 0 10px 0 0;
     padding: 10px 14px 10px 14px;
     font-size: 0.8em;
@@ -250,6 +241,8 @@ a {
     justify-content: space-between;
   }
 
+  /* background color uniquement en deskop et tablette*/
+
   @media all and (min-width: 769px) {
   .Hebergements {
     background: #F2F2F2;
@@ -258,7 +251,7 @@ a {
 
   .Hebergements {
     border-radius: 20px;
-    width: 68%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     margin: 40px 0 60px 0;
@@ -282,13 +275,13 @@ a {
   }
 
   .carte_hebergement {
-    margin: 10px;
+    margin: 1% 0.5% 1% 0.5%;
     padding: 5px;
-    width: 250px;
+    width: 30%;
     height: 200px;
     background: #FFFFFF;
     border-radius: 20px;
-    box-shadow: 2px 1px 5px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -302,21 +295,17 @@ a {
   }
 
   .presentation_hotel {
-    margin:10px 0 0 0;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+    margin:10px 0 0 10px;
+    width: 100%;
   }
 
-  .presentation_hotel h3, h3 + p {
+  .presentation_hotel h3 {
     margin: 0px 0 5px 0;
   }
 
   .classement {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
+    width: 100%;
+    margin: auto 0 0 10px;
   }
 
   .etoile_bleu {
@@ -330,14 +319,15 @@ a {
   .Populaires {
     background: #F2F2F2;
     border-radius: 20px;
-    width: 30%;
+    width: 29%;
     display: flex;
     flex-direction: column;
     margin: 40px 0px 60px 0;
   }
 
   .entête_populaire {
-    margin: 30px 40px 30px 40px;
+    width: 90%;
+    margin: 30px auto 30px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -349,13 +339,13 @@ a {
   }
 
   .carte_populaire {
-    margin: 10px 40px 20px 40px;
+    margin: 10px auto 20px auto;
     padding: 5px;
-    width: auto;
+    width: 80%;
     height: 145px;
     background: #FFFFFF;
     border-radius: 20px;
-    box-shadow: 2px 1px 5px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: row;
   }
@@ -368,19 +358,19 @@ a {
   }
 
   .presentation_hotel_populaire {
-    margin: 10px 0 10px 20px;
+    margin: 10px 0 0 5%;
     width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  .presentation_hotel_populaire h3, h3 + p {
-    margin: 0px 0 5px 0;
+  .presentation_hotel_populaire h3 {
+    margin: 0 0 5px 0;
   }
 
   .carte_populaire .classement {
-    margin: 15% 0 0 0;
+    margin: auto 0 0 0;
   }
 
   .Activites {
@@ -407,14 +397,15 @@ a {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 2px 1px 5px 3px rgba(0, 0, 0, 0.1);
+    justify-content:stretch;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
   }
 
   .carte_activites h3 {
     font-size: 1em;
     font-weight: 700;
-    margin:0 0 20px 10px;
+    margin: auto;
+    margin-left: 20px;
   }
 
   .carte_activites img {
@@ -425,9 +416,7 @@ a {
   }
 
   footer {
-    max-width: 100%;
     height: 225px;
-    margin: 40px 30px 0 30px;
     background-color: #F2F2F2;
     display: flex;
     flex-direction: row;
@@ -451,16 +440,13 @@ a {
 
   @media all and (min-width: 768px) and (max-width: 992px) {
     
-    html {
-      width: auto;
-    }
-  
     nav {
-      width: auto;
+      width: 40%;
     }
   
     nav a {
-      padding-left : 50px;
+      width: 50%;
+      margin:auto;
     }
 
     .corps_de_page {
@@ -475,7 +461,6 @@ a {
 
     .Populaires {
       width: auto;
-      margin: 25px 0px 60px 0;
       padding: 0 0 20px 0;
     }
 
@@ -498,35 +483,25 @@ a {
 
   @media screen and (max-width: 768px) {
 
-    html {
-      width: auto;
+    body {
+      width: 100%;
     }
 
     header {
       display:flex;
       flex-direction: column;
-      margin: 0;
-    }
-    
-    header img {
-      margin: 20px;
+      flex-direction: space-between;
+      align-items: center;
+      margin:30px 0 80px 0;
     }
 
     nav {
-      margin:0;
+      margin: 50px 0 0 0;
       width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
     }
 
     nav a {
-      width: 50%;
-          /* attention à mettre le bon nombre de pixel en haut, à droite, 
-    en bas et à gauche selon la plaquette*/
-      padding-bottom: 20px;
-      margin: 0 0 20px 0;
-      text-align: center;
+      padding: 0 0 20px 0;
     }
 
     nav a:hover{
@@ -534,43 +509,29 @@ a {
       border-bottom:#0065FC solid 3px;
     }
 
-    main {
-      margin: 0;
-    }
-
     h1 {
       margin: 15px 0 15px 0;
     }
 
     .recherche_et_filtres {
-      margin: 0 5.3% 0 5.3%
+      margin: 0 5.5% 0 5.5%;
     }
 
     .formulaire_de_recherche {
-      display: flex;
-      flex-direction: row;
       justify-content: center;
     }
 
-    #ville_recherche {
-      width: 100%;
+    #rechercher {
+      display: none;
     }
 
     .icone_recherche {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: 49px;
-      height: 47px;
+      padding: 15px;
       background-color: #0065FC;
       color: white;
       border: 1px solid #0065FC;
       border-radius: 0px 15px 15px 0px;
       font-size: 1.05em;
-    }
-    #rechercher {
-      display: none;
     }
 
     .filtres {
@@ -578,51 +539,32 @@ a {
       align-items: start;
     }
 
-    h2 {
-      margin: 0 0 15px 0;
-    }
-
     .boutons {
       flex-wrap: wrap;
-      width: 100%;
-      margin: auto;
     }
   
     .icones_boutons {
-      border: 2px solid #D9D9D9;
-      border-radius: 25px;
-      height: 30px;
-      width: 41%;
-      padding: 2% 1% 2% 3%;
-      margin: 0 3% 4% 0;
+      padding: 3% 1% 3% 1%;
+      width: 49%;
+      margin: 20px auto auto auto ;
     }
     
     .icones_boutons i {
-      color: #0065FC;
-      font-size: 1.05em;
+      font-size: 1em;
+      margin: 0 7px 0 10px;
     }
   
     .icones_boutons span {
-      margin: 0 0 0 5px;
-      font-size: 0.7em;
-      font-weight:700;
-      width: auto;
+      font-size: 0.6em;
     }
 
     .corps_de_page {
-      display: flex;
       flex-direction: column-reverse;
     }
 
     .Hebergements {
-      width: auto;
-      margin: 20px 0 60px 0;
-    }
-
-    .ensemble_cartes_hebergement {
-      margin:0;
-      max-width: auto;
-      height: auto;
+      width: 100%;
+      margin: 0 0 60px 0;
     }
 
     .Hebergements h1 {
@@ -634,45 +576,30 @@ a {
     }
 
     .carte_hebergement {
-      margin: 10px 20px 10px 20px;
-      padding: 5px;
+      margin: 2% 5% 2% 5%;
       width: 100%;
       height: 200px;
     }
   
-    .carte_hebergement img {
-      max-height: auto;
-      width: 100%;
-      border-radius: 20px 20px 0 0;
-      margin: 0 0 10px 0;
-    }
-  
     .presentation_hotel {
-      width: 90%;
-      display: flex;
-      flex-direction: column;
-      align-items: start;
+      margin: 10px 0 0 20px
     }
-  
-    .presentation_hotel h3, h3 + p {
-      margin: 0px 0 5px 0;
+
+    .classement {
+      margin: auto 0 0 20px
     }
 
     .Populaires {
       border-radius: 0;
       width: 100%;
-      margin: 40px 0 0 0;
       padding: 0 0 20px 0;
-    }
-  
-    .entête_populaire {
-      margin: 20px 40px 15px 40px;
-    }
-  
-    .chart {
-      color: #0065FC;
+      margin: 40px 0px 30px 0
     }
 
+    .carte_populaire {
+      width: 90%;
+    }
+ 
     .Activites {
       display: flex;
       flex-direction: column;
@@ -693,8 +620,8 @@ a {
       margin: 0 0 30px 0;
     }
 
-    .carte_activites h3 {
-      margin:20px 0 20px 10px;
+    .carte_activites img {
+      height: 75%;
     }
 
     footer {
