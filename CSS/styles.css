@@ -376,36 +376,24 @@ a {
   .Activites {
     display: flex;
     flex-direction: column;
-    max-width: auto;
-    height: auto;
   }
 
   .Activites h1 {
-    margin: 20px 20px 40px 0;
+    margin: 0 0 40px 0;
   }
 
   .ensemble_cartes_activites {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: auto;
   }
 
   .carte_activites {
-    width: 23%;
-    height: auto;
-    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content:stretch;
+    width: 23%;
+    border-radius: 20px;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
-  }
-
-  .carte_activites h3 {
-    font-size: 1em;
-    font-weight: 700;
-    margin: auto;
-    margin-left: 20px;
   }
 
   .carte_activites img {
@@ -413,6 +401,13 @@ a {
     height: 85%;
     width: 100%;
     border-radius: 20px 20px 0 0;
+  }
+
+  figcaption {
+    margin: auto 0 auto 5%;
+    top: 90%;
+    font-size: 1em;
+    font-weight: 700;
   }
 
   footer {
@@ -474,8 +469,16 @@ a {
       flex-direction: row;
      }
 
-    .carte_activites img {
+     .carte_activites {
+      width: 20%;
+    }
+
+     .carte_activites img {
       height: 80%;
+    }
+  
+    figcaption {
+      font-weight: 700;
     }
   }
 
@@ -601,23 +604,18 @@ a {
     }
  
     .Activites {
-      display: flex;
-      flex-direction: column;
-      max-width: 100%;
-      height: auto;
       margin: 0 20px 0 20px;
     }
 
     .ensemble_cartes_activites {
       flex-direction: column;
       width: 100%;
-      margin: auto;
     }
 
     .carte_activites {
       width: 100%;
       height: 200px;
-      margin: 0 0 30px 0;
+      margin: 0 0 5% 0;
     }
 
     .carte_activites img {
