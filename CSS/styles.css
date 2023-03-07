@@ -244,12 +244,12 @@ a {
   /* background color uniquement en deskop et tablette*/
 
   @media all and (min-width: 769px) {
-  .Hebergements {
+  .hebergements {
     background: #F2F2F2;
   }
 }
 
-  .Hebergements {
+  .hebergements {
     border-radius: 20px;
     width: 70%;
     display: flex;
@@ -257,11 +257,11 @@ a {
     margin: 40px 0 60px 0;
   }
 
-  .Hebergements h1 {
+  .hebergements h1 {
     margin: 30px 0 30px 40px;
   }
 
-  .Hebergements h2 {
+  .hebergements h2 {
     margin: 20px 0 40px 40px;
   }
 
@@ -316,7 +316,7 @@ a {
     color: #F2F2F2;
   }
 
-  .Populaires {
+  .populaires {
     background: #F2F2F2;
     border-radius: 20px;
     width: 29%;
@@ -372,12 +372,12 @@ a {
     margin: auto 0 0 0;
   }
 
-  .Activites {
+  .activites {
     display: flex;
     flex-direction: column;
   }
 
-  .Activites h1 {
+  .activites h1 {
     margin: 0 0 40px 0;
   }
 
@@ -402,7 +402,7 @@ a {
     border-radius: 20px 20px 0 0;
   }
 
-  figcaption {
+  .activites span {
     margin: auto 0 auto 5%;
     top: 90%;
     font-size: 1em;
@@ -433,6 +433,10 @@ a {
   /* adaptiblité tablette entre 768px  et 992 px */
 
   @media all and (min-width: 768px) and (max-width: 992px) {
+
+    body {
+      width: 90%;
+    }
     
     nav {
       width: 40%;
@@ -448,12 +452,12 @@ a {
       flex-direction: column;
     }
 
-    .Hebergements {
+    .hebergements {
       width: auto;
       margin: 40px 0 25px 0;
     }
 
-    .Populaires {
+    .populaires {
       width: auto;
       padding: 0 0 20px 0;
     }
@@ -476,7 +480,7 @@ a {
       height: 80%;
     }
   
-    figcaption {
+    .activites span {
       font-weight: 700;
     }
   }
@@ -492,7 +496,6 @@ a {
     header {
       display:flex;
       flex-direction: column;
-      flex-direction: space-between;
       align-items: center;
       margin:30px 0 80px 0;
     }
@@ -564,12 +567,12 @@ a {
       flex-direction: column-reverse;
     }
 
-    .Hebergements {
+    .hebergements {
       width: 100%;
       margin: 0 0 60px 0;
     }
 
-    .Hebergements h1 {
+    .hebergements h1 {
       margin: 20px 0 25px 20px;
     }
   
@@ -587,14 +590,14 @@ a {
       margin: auto 0 0 20px
     }
 
-    .Populaires {
+    .populaires {
       border-radius: 0;
       width: 100%;
       padding: 0 0 20px 0;
       margin: 40px 0px 30px 0
     }
  
-    .Activites {
+    .activites {
       margin: 0 20px 0 20px;
     }
 
