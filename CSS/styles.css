@@ -341,7 +341,7 @@ a {
   .carte_populaire {
     margin: 10px auto 20px auto;
     padding: 5px;
-    width: 80%;
+    width: 90%;
     height: 145px;
     background: #FFFFFF;
     border-radius: 20px;
@@ -352,13 +352,12 @@ a {
 
   .carte_populaire img {
     object-fit: cover;
-    max-height: 100%;
-    width: 50%;
+    width: 40%;
     border-radius: 20px 0 0 20px;
   }
 
   .presentation_hotel_populaire {
-    margin: 10px 0 0 5%;
+    padding: 10px 0 0 10px;
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -574,10 +573,6 @@ a {
       margin: 20px 0 25px 20px;
     }
   
-    .Hebergements h2 {
-      display: none;
-    }
-
     .carte_hebergement {
       margin: 2% 5% 2% 5%;
       width: 100%;
@@ -597,10 +592,6 @@ a {
       width: 100%;
       padding: 0 0 20px 0;
       margin: 40px 0px 30px 0
-    }
-
-    .carte_populaire {
-      width: 90%;
     }
  
     .Activites {
