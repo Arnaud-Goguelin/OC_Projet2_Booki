@@ -101,6 +101,7 @@ nav {
   width: 50%;
   text-align: center;
   padding: 30px 0 0 0;
+  font-size: 16px;
 }
 
 .nav__liens:hover{
@@ -115,7 +116,7 @@ main {
 }
 
 h1 {
-  font-size: 1.4em;
+  font-size: 22px;
   font-weight:700;
 }
 
@@ -179,9 +180,7 @@ p {
   border: 1px solid #0065FC;
   border-radius: 0px 15px 15px 0px;
   color: white;
-  font-size: 16px;
   font-weight:700;
-  padding: 14px 16px 14px 16px;
 }
 
 .recherche_et_filtres__filtres {
@@ -316,16 +315,15 @@ p {
 }
 
 .classement__etoile_bleu {
-  width: 12px;
-  height: 12px;
-  margin: 0 2px 0 0;
+  font-size: 12px;
+  margin: 0 -3px 0 0;
   color: #0065FC;
 }
 
 .classement__etoile_grise {
+  font-size: 12px;
   width: 12px;
   height: 12px;
-  margin: 0 2px 0 0;
   color: #F2F2F2;
 }
 
@@ -420,33 +418,34 @@ p {
 }
 
 .activites__cartes span {
-  margin: auto 0 auto 5%;
-  top: 90%;
-  font-size: 1em;
+  margin: auto 0 auto 20px;
+  font-size: 14px;
   font-weight: 700;
 }
 
 footer {
-  height: 225px;
   background-color: #F2F2F2;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  padding: 45px 0 60px 70px;
 }
 
-.footer__liste {
-  height: 80%;
+.footer_conteneur {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .footer__liste__liens {
-  padding: 15px 0 0 0;
+  margin: 0 0 15px 0;
   font-size: 16px;
 }
 
 .footer__liste__liens h3 {
   font-size: 18px;
+  margin: 0 0 20px 0;
 }
+
+
 
   /* adaptiblité tablette entre 768px  et 992 px */
 
@@ -529,15 +528,11 @@ footer {
   }
 
   .recherche_et_filtres {
-    margin: 0 5.5% 0 5.5%;
+    margin: 0 20px 0 20px;
   }
 
   .recherche_et_filtres h1 {
-    margin: 15px 0 15px 0;
-  }
-
-  .recherche_et_filtres__formulaire {
-    justify-content: center;
+    margin: 30px 0 15px 0;
   }
 
   .formulaire__bouton_rechercher {
@@ -545,12 +540,18 @@ footer {
   }
 
   .formulaire__icone_recherche {
-    padding: 15px;
+    padding: 17px;
     background-color: #0065FC;
     color: white;
-    border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
-    font-size: 1.05em;
+  }
+
+  .recherche_et_filtres__formulaire form  {
+    width: 100%;
+  }
+
+  .formulaire__champ_saisie   {
+    width: 100%;
   }
 
   .recherche_et_filtres__filtres {
@@ -563,18 +564,18 @@ footer {
   }
   
   .filtres__conteneur__boutons {
-    padding: 3% 1% 3% 1%;
     width: 49%;
-    margin: 20px auto auto auto ;
+    margin: 15px auto auto auto ;
+    padding: 15px 0 15px 12px;
   }
-    
+
   .filtres__conteneur__boutons i {
     font-size: 1em;
-    margin: 0 7px 0 10px;
+    margin: 0 5px 0 0;
   }
   
   .filtres__conteneur__boutons span {
-    font-size: 0.6em;
+    font-size: 11px;
   }
 
   .corps_de_page {
@@ -631,13 +632,16 @@ footer {
   }
 
   footer {
-    height: auto;
-    margin: 0 0 0 0;
+    height: 500px;
+    padding: 45px 0 60px 30px;
+  }
+
+  .footer_conteneur {
+    height: 100%;
     flex-direction: column;
     align-items: start;
+    justify-content: space-between;
   }
-  
-  .footer__liste {
-    margin: 20px 0 20px 30px;
-  }
+
+
 }
