@@ -457,7 +457,16 @@ footer {
   }
     
   nav {
-    width: 40%;
+    width: 30%;
+  }
+
+  .nav__liens {
+    text-align: end;
+  }
+
+  .nav__liens:hover {
+    color: black;
+    border-top: none;
   }
 
   .filtres__conteneur__boutons {
