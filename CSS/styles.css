@@ -296,12 +296,12 @@ p {
 }
 
 .hebergements__carte_hotel__presentation {
-  margin:10px 0 0 10px;
+  margin: 5px 0 0 10px;
   width: 100%;
 }
 
 .hebergements__carte_hotel__presentation h3 {
-  margin: 0px 0 5px 0;
+  margin: 0px 0 10px 0;
   font-size: 16px;
 }
 
@@ -375,7 +375,7 @@ p {
 }
 
 .populaires__carte_hotel__presentation h3 {
-  margin: 0 0 5px 0;
+  margin: 0 0 10px 0;
   font-size: 16px;
 }
 
