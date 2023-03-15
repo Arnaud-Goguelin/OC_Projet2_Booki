@@ -94,18 +94,18 @@ header {
 nav {
   width: 30%;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: end;
 }
 
 .nav__liens {
-  width: 50%;
+  width: 40%;
   text-align: center;
   padding: 30px 0 0 0;
+  margin: 0 0 0 30px;
   font-size: 16px;
 }
 
-.nav__liens:hover{
+.nav__liens:hover {
   color: #0065FC;
   border-top:#0065FC solid 2px;
 }
@@ -145,11 +145,10 @@ p {
 .recherche_et_filtres__formulaire {
   display: flex;
   flex-direction: row;
-  justify-content: start;
   align-items: center;
 }
 
-  /* icone_recherche est masqué en deskopt et n'apparait qu'en mobile*/
+  /* icone_recherche est masqué en deskopt et n'apparait qu'en mobile */
 @media all and (min-width: 769px) {
   .formulaire__icone_recherche {
     display: none;
@@ -159,14 +158,27 @@ p {
 .formulaire__icone_localisation {
   background-color: #F2F2F2;
   border-radius: 15px 0px 0px 15px;
-  padding:17px;
+  width: 50px;
+  height: 50px;
+  padding: 15px 18px 15px 18px;
+}
+
+.formulaire__conteneur {
+  display: flex;
+  align-items: center;
+  height: 50px ;
 }
 
 .formulaire__champ_saisie {
-  height: 50px;
-  border: 1px solid #F2F2F2;
+  border: solid 1px #F2F2F2;
+  border-right: 0px;
+  border-left: 0px;
+  height: 100%;
   padding: 0 0 0 15px;
   outline:none;
+  /* taille et épaisseur du texte saisi */
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .formulaire__champ_saisie::placeholder {
@@ -177,10 +189,9 @@ p {
 }
 
 .formulaire__bouton_rechercher {
-  width: 132px;
-  Height: 50px;
+  height: 100%;
   background-color: #0065FC;
-  border: 1px solid #0065FC;
+  border: 0;
   border-radius: 0px 15px 15px 0px;
   color: white;
   font-weight:700;
@@ -201,12 +212,10 @@ p {
   flex-direction: row;
 }
 
-/* effet :hover uniquement en deskop */
-@media all and (min-width: 992px) {
-  .filtres__conteneur :hover {
-    background-color: #DEEBFF;
-  }
+.filtres__conteneur :hover {
+  background-color: #DEEBFF;
 }
+
 
 .filtres__conteneur__boutons {
   margin: 0 0 0 20px;
@@ -231,19 +240,18 @@ p {
 /* code du texte et icone "infos"  */
 
 .recherche_et_filtres__infos {
-  margin: 40px 0 0 0;
   display: flex;
-  flex-direction: row;
   align-items: center;
+  margin: 40px 0 0 0;
 }
 
-.infos__icone_i {
-  margin: 0 10px 0 0;
-  padding: 10px 14px 10px 14px;
-  font-size: 0.8em;
-  color:#0065FC;
+.infos__icone {
+  font-size: 1em;
   border: 1px solid #D9D9D9;
-  border-radius: 24px;
+  padding: 5px 10px 5px 10px;
+  margin: 0  15px 0 0;
+  border-radius: 25px;
+  color:#0065FC;
 }
 
 /* code de les sections hébergements et populaires*/
@@ -336,6 +344,16 @@ p {
   width: 12px;
   height: 12px;
   color: #F2F2F2;
+}
+
+/* code du bouton "Afficher plus" */
+
+.hebergements__afficher_plus {
+  font-size: 18px;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  text-align: left;
 }
 
  /* code de l'article populaires */
@@ -468,36 +486,26 @@ footer {
 
 
 
-  /* adaptiblité tablette entre 768px  et 992 px */
+  /* adaptiblité tablette entre 769px  et 992 px */
 
-@media all and (min-width: 768px) and (max-width: 992px) {
+@media all and (min-width: 769px) and (max-width: 992px) {
 
   /* code général au projet en format tablette */
 
   body {
-    width: 99%;
+    width: 95%;
   }
 
-  /* code du nav dans le header */
-    
   nav {
-    width: 30%;
-  }
-
-  .nav__liens {
-    text-align: end;
-  }
-
-  .nav__liens:hover {
-    color: black;
-    border-top: none;
+    width: 40%;
   }
 
   /* code des boutons filtres dans la section recherche_et_filtres */
 
   .filtres__conteneur__boutons {
      margin: 0 0 0 auto;
-  }
+     padding: 15px 15px 15px 15px;
+    }
 
   /* code de la section hebergement et de l'article populaire */
 
@@ -511,7 +519,6 @@ footer {
     margin: 40px 0 50px 0;
   }
   
-
   .populaires {
     width: auto;
     padding: 30px 40px 50px 40px;
@@ -565,12 +572,13 @@ footer {
   }
 
   .nav__liens {
+    width: 50%;
     padding: 0 0 20px 0;
   }
 
   .nav__liens:hover{
-    border-top:none;
-    border-bottom:#0065FC solid 3px;
+    border-top: none;
+    border-bottom:#0065FC solid 2px;
   }
 
   /* code de la section recherches_et_filtres */
@@ -585,23 +593,25 @@ footer {
 
   /* code du formulaire de recherche dans la section recherches_et_filtres */
 
-  .formulaire__bouton_rechercher {
+  .formulaire__bouton_rechercher span {
     display: none;
   }
 
-  .formulaire__icone_recherche {
-    padding: 17px;
-    background-color: #0065FC;
-    color: white;
-    border-radius: 0px 15px 15px 0px;
-  }
-
-  .recherche_et_filtres__formulaire form  {
+  .formulaire__conteneur  {
     width: 100%;
   }
 
   .formulaire__champ_saisie   {
-    width: 100%;
+    /* largeur du champs de saisie = total - largeur du bouton recherche (loupe) décrit ci-dessous */
+    width: calc(100% - 50px);
+  }
+
+  .formulaire__bouton_rechercher {
+    width: 50px;
+    height: 50px;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 15px 15px 0px;
   }
 
   /* code des boutons filtres dans la section recherches_et_filtres */

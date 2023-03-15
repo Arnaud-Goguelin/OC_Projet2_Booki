@@ -27,11 +27,9 @@
             <p>En plein centre-ville ou en plein nature</p>
             <div class="recherche_et_filtres__formulaire">
                 <i class="fa-solid fa-location-dot formulaire__icone_localisation"></i>
-                <form method="get" action ="#">
-                    <input class="formulaire__champ_saisie" type="search" id="ville_recherche" name="recherche" placeholder="Marseille, France">    
-                </form>
-                <input class="formulaire__bouton_rechercher" type="submit" value="Rechercher" id="rechercher"> 
-                <i class="fa-solid fa-magnifying-glass formulaire__icone_recherche"></i>   
+                <form class="formulaire__conteneur" method="get" action ="#">
+                    <input class="formulaire__champ_saisie" type="search" id="ville_recherche" name="recherche" placeholder="Marseille, France"><button class="formulaire__bouton_rechercher" type="submit"><span>Rechercher</span><i class="fa-solid fa-magnifying-glass formulaire__icone_recherche"></i></button>
+                </form>   
             </div>
 
             <div class="recherche_et_filtres__filtres">
@@ -45,7 +43,7 @@
             </div>
 
             <div class="recherche_et_filtres__infos">
-                <i class="fa-solid fa-info infos__icone_i"></i>
+                <i class="fa-solid fa-info infos__icone"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
@@ -145,7 +143,7 @@
             </a>
             </div>
 
-            <h2>Afficher plus</h2>
+            <button class="hebergements__afficher_plus">Afficher plus</button>
         </section>
 
         <article class="populaires">
