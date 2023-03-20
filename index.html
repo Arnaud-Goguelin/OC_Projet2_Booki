@@ -2,12 +2,18 @@
 <html lang="fr">
 
 <head>
+    <!-- codage de caractères informatiques - transformation de format -->
     <meta charset="utf-8" >
+    <!-- compatibilité avec le navigateur Edge -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- compatibilité aux écrans plus étroits, ici la largeur du viewport (zone d'affichage du site) = 100% -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki | Agence de voyage en ligne</title>
+    <!-- Appel du normalize CSS pour uniformiser les mises en page par défaut des différents navigateurs -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Appel des icones directement hébergés sur https://cdnjs.com pour ne pas les héberger en local -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link href="CSS/styles.css" rel="stylesheet" >
 </head>
 
@@ -28,17 +34,22 @@
             <div class="recherche_et_filtres__formulaire">
                 <i class="fa-solid fa-location-dot formulaire__icone_localisation"></i>
                 <form class="formulaire__conteneur" method="get" action ="#">
-                    <input class="formulaire__champ_saisie" type="search" id="ville_recherche" name="recherche" placeholder="Marseille, France"><button class="formulaire__bouton_rechercher" type="submit"><span>Rechercher</span><i class="fa-solid fa-magnifying-glass formulaire__icone_recherche"></i></button>
+                    <input class="formulaire__champ_saisie" type="search" id="ville_recherche" name="recherche" placeholder="Marseille, France">
+                    <!-- le bouton "rechercher" est composé de deux éléments, l'apparence changeant selon le format d'écran -->
+                    <button class="formulaire__bouton_rechercher" type="submit">
+                        <span>Rechercher</span>
+                        <i class="fa-solid fa-magnifying-glass formulaire__icone_recherche"></i>
+                    </button>
                 </form>   
             </div>
 
             <div class="recherche_et_filtres__filtres">
                 <h2>Filtres</h2>
                 <div class="filtres__conteneur">
-                    <div class="filtres__conteneur__boutons"><i class="fa-solid fa-money-bill-wave"></i><span>Économique</span></div>
-                    <div class="filtres__conteneur__boutons"><i class="fa-solid fa-person"></i><span>Familial</span></div>
-                    <div class="filtres__conteneur__boutons"><i class="fa-solid fa-heart"></i><span>Romantique</span></div>
-                    <div class="filtres__conteneur__boutons"><i class="fa-solid fa-dog"></i><span>Animaux autorisés</span></div>
+                    <button class="filtres__conteneur__boutons"><i class="fa-solid fa-money-bill-wave"></i><span>Économique</span></button>
+                    <button class="filtres__conteneur__boutons"><i class="fa-solid fa-person"></i><span>Familial</span></button>
+                    <button class="filtres__conteneur__boutons"><i class="fa-solid fa-heart"></i><span>Romantique</span></button>
+                    <button class="filtres__conteneur__boutons"><i class="fa-solid fa-dog"></i><span>Animaux autorisés</span></button>
                 </div>
             </div>
 
@@ -146,7 +157,7 @@
             <button class="hebergements__afficher_plus">Afficher plus</button>
         </section>
 
-        <asection class="populaires">
+        <section class="populaires">
             <div class="populaires__entete">
             <h1>Les plus populaires</h1>
             <i class="fa-solid fa-chart-line populaire__entete_icone_chart"></i>
