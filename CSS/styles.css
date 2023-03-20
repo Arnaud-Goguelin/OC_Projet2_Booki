@@ -91,14 +91,14 @@ header {
   height: 20px; 
 }
 
-nav {
+.header__nav {
   width: 30%;
   display: flex;
   justify-content: end;
 }
 
 .nav__liens {
-  width: 40%;
+  width: 50%;
   text-align: center;
   padding: 30px 0 0 0;
   margin: 0 0 0 30px;
@@ -254,7 +254,7 @@ p {
   color:#0065FC;
 }
 
-/* code de les sections hébergements et populaires*/
+/* code de la section hébergements et de l'article populaires*/
 
 .corps_de_page {
   display: flex;
@@ -467,7 +467,7 @@ footer {
   padding: 45px 0 60px 70px;
 }
 
-.footer_conteneur {
+.footer__nav {
   width: 75%;
   display: flex;
   flex-direction: row;
@@ -496,7 +496,7 @@ footer {
     width: 95%;
   }
 
-  nav {
+  .header__nav {
     width: 40%;
   }
 
@@ -507,7 +507,7 @@ footer {
      padding: 15px 15px 15px 15px;
     }
 
-  /* code de la section hebergement et de l'article populaire */
+  /* code de la section hebergement et de la section populaire */
 
   .corps_de_page {
     display: flex;
@@ -566,13 +566,12 @@ footer {
     margin:30px 0 80px 0;
   }
 
-  nav {
+  .header__nav {
     margin: 50px 0 0 0;
     width: 100%;
   }
 
   .nav__liens {
-    width: 50%;
     padding: 0 0 20px 0;
     margin: 0 0 0 0;
   }
@@ -709,7 +708,7 @@ footer {
     padding: 45px 0 60px 30px;
   }
 
-  .footer_conteneur {
+  .footer__nav {
     height: 100%;
     flex-direction: column;
     align-items: start;
