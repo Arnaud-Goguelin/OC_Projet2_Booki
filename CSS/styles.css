@@ -254,7 +254,7 @@ p {
   color:#0065FC;
 }
 
-/* code de la section hébergements et de l'article populaires*/
+/* code des sections hébergements et  populaires*/
 
 .corps_de_page {
   display: flex;
@@ -356,7 +356,7 @@ p {
   text-align: left;
 }
 
- /* code de l'article populaires */
+ /* code de la section populaires */
 
 .populaires {
   background: #F2F2F2;
@@ -380,7 +380,7 @@ p {
   color: #0065FC;
 }
 
-/* code de s cartes hôtels de l'article populaires */
+/* code des cartes hôtels de la section populaires */
 
 .populaires__carte_hotel {
   margin: 0 0 30px 0;
@@ -420,7 +420,7 @@ p {
   margin: auto 0 0 0;
 }
 
-/* code de la section activites */
+/* code de l'article activites */
 
 .activites {
   display: flex;
@@ -530,14 +530,14 @@ footer {
     justify-content: space-between;
   }
 
-  /* code des cartes hotels de l'article populaires */
+  /* code des cartes hotels de la section populaires */
 
   .populaires__carte_hotel {
     width: 30%;
     height: 145px;
   }
 
-  /* code des cartes activites de la section activites */
+  /* code des cartes activites de l'article activites */
 
   .activites__cartes {
     width: 20%;
@@ -640,7 +640,7 @@ footer {
     font-size: 11px;
   }
 
-  /* code de la section hebergement et de l'article populaires */
+  /* code des sections hebergements et populaires */
 
   .corps_de_page {
     flex-direction: column-reverse;
@@ -678,7 +678,7 @@ footer {
     margin: auto 0 0 20px
   }
 
-  /* code de la section activites */
+  /* code de l'arcticle activites */
  
   .activites {
     margin: 0 20px 0 20px;
@@ -689,7 +689,7 @@ footer {
     width: 100%;
   }
 
-  /* code des cartes activites dans la section activites */
+  /* code des cartes activites dans l'article activites */
 
   .activites__cartes {
     width: 100%;
