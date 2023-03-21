@@ -17,7 +17,7 @@ Soutenance planifiée pour le 24 mars.
   - Il s'agit d'une interface, certains éléments doivent être cliquables mais pas fonctionnels.
   - Seul les liens de l'entête doivent être fonctionnels (ancres vers les autres sections de la page).
   - Coder en deskop first, largeur maximale de 1400 px.
-  - Breakpoints: 992px passage au format tablette / 768 px passage au format mobile.
+  - Breakpoints: 991px passage au format tablette / 767px passage au format mobile.
   - Sémantique: utiliser au minimum “header”, “nav”,“h1-h2-h3”, “main”, “section”, “article” et “footer”.
   - Le code doit être valide aux validateurs W3C HTML et CSS.
   - Aucun framework CSS ne doit être utilisé, aucun autre language que HTML et CSS n'est autorisé.
