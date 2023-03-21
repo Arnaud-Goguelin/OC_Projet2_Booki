@@ -149,7 +149,7 @@ p {
 }
 
   /* icone_recherche est masqué en deskopt et n'apparait qu'en mobile */
-@media all and (min-width: 769px) {
+@media all and (min-width: 767px) {
   .formulaire__icone_recherche {
     display: none;
   }
@@ -264,9 +264,10 @@ p {
 }
 
   /* code de la section hébergements */
+  
   /* background color uniquement en deskop et tablette*/
 
-@media all and (min-width: 769px) {
+@media all and (min-width: 767px) {
   .hebergements {
     background: #F2F2F2;
   }
@@ -487,9 +488,9 @@ footer {
 
 
 
-  /* adaptiblité tablette entre 769px  et 992 px */
+  /* adaptiblité tablette entre 768px  et 991 px */
 
-@media all and (min-width: 769px) and (max-width: 992px) {
+@media all and (min-width: 767px) and (max-width: 991px) {
 
   /* code général au projet en format tablette */
 
@@ -551,7 +552,7 @@ footer {
 
   /* adaptabilité mobile en dessous de 768 px */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
   /* code général au projet en format mobile */
 
