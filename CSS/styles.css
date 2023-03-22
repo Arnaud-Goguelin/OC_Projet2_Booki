@@ -462,7 +462,7 @@ p {
   border-radius: 20px 20px 0 0;
 }
 
-.activites__cartes span {
+.activites__cartes h3 {
   margin: auto 0 auto 20px;
   font-size: 14px;
   font-weight: 700;
