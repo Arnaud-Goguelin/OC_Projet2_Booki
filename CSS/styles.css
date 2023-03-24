@@ -273,7 +273,7 @@ p {
   
   /* background color uniquement en deskop et tablette*/
 
-@media all and (min-width: 767px) {
+@media all and (min-width: 768px) {
   .hebergements {
     background: #F2F2F2;
   }
