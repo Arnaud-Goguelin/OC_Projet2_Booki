@@ -497,7 +497,7 @@ footer {
 
   /* adaptiblité tablette entre 768px  et 991 px */
 
-@media all and (min-width: 767px) and (max-width: 991px) {
+@media all and (min-width: 768px) and (max-width: 991px) {
 
   /* code général au projet en format tablette */
 
