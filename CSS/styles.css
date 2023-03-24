@@ -148,7 +148,7 @@ p {
 }
 
   /* icone_recherche est masqué en deskopt et n'apparait qu'en mobile */
-@media all and (min-width: 767px) {
+@media all and (min-width: 768px) {
   .formulaire__icone_recherche {
     display: none;
   }
